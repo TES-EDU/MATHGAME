@@ -167,7 +167,7 @@ export function playBGM(volume: number = 0.3): void {
     return;
   }
 
-  bgmAudio = new Audio('/sounds/ukulele-ukulele-joyful.mp3');
+  bgmAudio = new Audio(`${import.meta.env.BASE_URL}sounds/ukulele-ukulele-joyful.mp3`);
   bgmAudio.loop = true;
   bgmAudio.volume = clampedVolume;
   bgmAudio.play().catch((e) => {
