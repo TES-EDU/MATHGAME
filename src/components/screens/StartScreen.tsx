@@ -322,6 +322,19 @@ const StartScreen: React.FC = () => {
           선생님 페이지 가기
         </button>
       </div>
+
+      {/* Developer Credit */}
+      <div
+        className="fixed bottom-3 left-4 pointer-events-none select-none"
+        style={{ fontFamily: FONT_FAMILY }}
+      >
+        <p className="text-xs leading-snug" style={{ color: 'rgba(93, 78, 55, 0.35)' }}>
+          © 2026 TES-EDU
+        </p>
+        <p className="text-xs leading-snug" style={{ color: 'rgba(93, 78, 55, 0.35)' }}>
+          Developed by Seojin Lee
+        </p>
+      </div>
     </div>
   );
 };
