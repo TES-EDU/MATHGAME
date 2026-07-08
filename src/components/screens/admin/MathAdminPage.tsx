@@ -191,8 +191,8 @@ export default function AdminPage({ onStudentClick }: Props) {
 
   // ── Branch Selection Screen ──
   const BranchSelectView = () => (
-    <div className="flex-1 flex items-center justify-center p-6">
-      <div className="w-full max-w-2xl">
+    <div className="flex-1 overflow-y-auto">
+      <div className="w-full max-w-2xl mx-auto px-6 py-10">
         <div className="text-center mb-10">
           <div className="text-xs font-extrabold tracking-[0.22em] text-sb-primary-dark mb-2">SELECT BRANCH</div>
           <h1 className="text-3xl font-extrabold text-sb-ink mb-2">반을 선택하세요</h1>
@@ -332,7 +332,7 @@ export default function AdminPage({ onStudentClick }: Props) {
   );
 
   return (
-    <div className="h-full bg-sb-bg overflow-y-auto flex flex-col">
+    <div className="min-h-screen bg-sb-bg flex flex-col">
       <Header />
       {!selectedBranch || !isBranchUnlocked ? BranchSelectView() : HistoryView()}
     </div>
